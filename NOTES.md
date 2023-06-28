@@ -57,3 +57,9 @@ vite - for easy project setup
    - create a search bar
    - create a filter section
    - create a view section for the retrieved data
+    ^ 1hr
+6. add react context to handle state management
+   ^ 30 mins
+7. add search functionality
+8. add results table view
+9. add filter functionality
