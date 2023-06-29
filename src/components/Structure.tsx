@@ -7,7 +7,7 @@ import { SearchBar } from './SearchBar';
 const anatomical_structure_styles = {
   parent: twMerge('h-full grid grid-cols-12 grid-rows-6 bg-gray-100'),
   background: twMerge(
-    'col-span-10 col-start-2 row-start-1 border-2 border-slate-900 rounded row-span-6 bg-slate-700 z-0'
+    'col-span-10 col-start-2 row-start-1 border-2 border-slate-500 rounded row-span-6 bg-slate-700 z-0'
   ),
   search_bar: twMerge('col-start-2 row-span-full row-start-1 col-span-2 z-10'),
   results_display: twMerge(
