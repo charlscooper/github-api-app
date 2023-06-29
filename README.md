@@ -22,4 +22,4 @@ The purpose of this application is to allow users to search and filter through r
 
 ## Releases
 
-Get the latest version from the [Releases](#https://github.com/charlscooper/github-api-app/releases)
+Get the latest version from the [Releases](https://github.com/charlscooper/github-api-app/releases)
