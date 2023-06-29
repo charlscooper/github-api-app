@@ -62,4 +62,14 @@ vite - for easy project setup
    ^ 30 mins
 7. add search functionality
 8. add results table view
-9. add filter functionality
+ ^ 1hr
+
+What i would add in future:
+
+- table display for results
+- filters
+- search for multiple repos and display list to chose from
+- add a loading screen between data transitions
+- clean up ui to make more user friendly
+- refactor code to make more readable
+- create some tests to atleast check the happy path
