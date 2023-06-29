@@ -1,8 +1,6 @@
 import { Octokit } from '@octokit/core';
 import { REQUEST_TYPE } from '../constants/api';
 
-
-
 export type GetRepoData = {
   owner: string;
   repo_name: string;
@@ -35,13 +33,16 @@ const get_repo_data = async ({ owner, repo_name }: GetRepoData) => {
   console.log(`generated request data with: ${JSON.stringify(request_data)}}`);
 
   try {
-    const response = await octokit.request(
-      format_to_octokit_method(request_data),
-      request_data.request_params
-    ).then((response) => response.data);
+    const response = await octokit
+      .request(
+        format_to_octokit_method(request_data),
+        request_data.request_params
+      )
+      .then((response) => response.data);
+    console.log(`response: ${JSON.stringify(response)}`);
     return response;
   } catch (error) {
-    return error;
+    console.log(`error: ${error}`);
   }
 };
 

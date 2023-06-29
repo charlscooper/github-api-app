@@ -1,4 +1,3 @@
-import { defaultState, type AppState } from './data';
 import {
   ContextAction,
   GET_DEFAULT_STATE,
@@ -8,6 +7,7 @@ import {
   UpdateRepoName,
   UpdateRepoOwner,
 } from './actions';
+import { defaultState, type AppState } from './data';
 
 type AppStateUpdateHandler<T> = (
   state: AppState,
@@ -16,6 +16,7 @@ type AppStateUpdateHandler<T> = (
 ) => AppState;
 
 const Reducer = (state = defaultState(), action: ContextAction): AppState => {
+  console.log('action type: ', action.type);
   switch (action.type) {
     case UPDATE_REPO_OWNER:
       return handleRepoOwnerUpdate(state, action.payload);
