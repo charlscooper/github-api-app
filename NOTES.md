@@ -63,6 +63,7 @@ vite - for easy project setup
 7. add search functionality
 8. add results table view
  ^ 1hr
+9. add installation process to readme
 
 What i would add in future:
 

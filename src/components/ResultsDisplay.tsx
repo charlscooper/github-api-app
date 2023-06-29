@@ -13,7 +13,7 @@ import {
 
 const anatomical_structure_styles = {
   parent: twMerge(
-    'container text-gray-100 grid gap-4 grid-cols-3 grid-rows-2 w-full py-2'
+    'container text-gray-100 grid gap-4 grid-cols-3 grid-rows-2 w-full py-2 self-center'
   ),
 } as const;
 
@@ -67,6 +67,11 @@ const ResultsDisplay = React.forwardRef<
       desc: 'The number of watchers the repository has',
       data: results?.watchers_count,
     },
+    {
+      title: 'Open Issues',
+      desc: 'The number of open issues the repository has',
+      data: results?.open_issues_count,
+    },
   ];
 
   return (
@@ -97,7 +102,7 @@ const ResultsDisplay = React.forwardRef<
         );
       })}
       {!results || !state.repo_name || !state.repo_owner ? (
-        <Card className="col-span-full row-span-full bg-transparent flex items-center justify-center border-slate-900 border-2 text-gray-100">
+        <Card className="col-span-full row-span-full bg-transparent flex items-center justify-center border-0 text-gray-100">
           <h2 className="text-7xl">No results</h2>
         </Card>
       ) : null}
