@@ -25,6 +25,6 @@ const UseAppContext = () => {
     throw new Error('useFilterContext must be used within a FilterProvider');
   }
   return context;
-}
+};
 
 export { AppProvider, UseAppContext };

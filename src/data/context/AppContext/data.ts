@@ -1,8 +1,7 @@
 type AppState = {
-    repo_owner: string;
-    repo_name: string;
+  repo_owner: string;
+  repo_name: string;
 };
-
 
 const defaultState = (): AppState =>
   ({
@@ -10,4 +9,4 @@ const defaultState = (): AppState =>
     repo_name: '',
   } as const);
 
-export {type AppState, defaultState}
+export { defaultState, type AppState };
