@@ -87,7 +87,7 @@ const SearchBar = React.forwardRef<
         <form
           onSubmit={form.handleSubmit(on_submit)}
           onReset={on_reset}
-          className="grid grid-rows-[auto_auto_0.5fr] gap-4 h-full"
+          className="grid grid-rows-[auto_auto_0.5fr] gap-4"
         >
           <FormField
             control={form.control}

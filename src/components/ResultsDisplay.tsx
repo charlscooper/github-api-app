@@ -13,7 +13,7 @@ import {
 
 const anatomical_structure_styles = {
   parent: twMerge(
-    'container text-gray-100 grid gap-4 grid-cols-3 grid-rows-2 w-full py-2'
+    'container text-gray-100 grid gap-4 grid-cols-3 grid-rows-2 w-full py-2 max-h-1/2 self-center'
   ),
 } as const;
 
